@@ -15,7 +15,7 @@ namespace FunWithLists
         public Dog this[int index]
         {
             get { return _dogArray[index]; }
-            set { _dogArray.Append(value); }
+            set { _dogArray[index] = value; }
         }
 
         
