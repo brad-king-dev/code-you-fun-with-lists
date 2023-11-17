@@ -43,4 +43,15 @@ if(theDogPound.Contains(germanShepherd))
 //Note the german shepherd should now be first
 DogRollCall.WriteToConsole(theDogPound);
 
+
+var proofDogRollCallCanBeAList = new List<Dog>();
+proofDogRollCallCanBeAList = theDogPound.ToList();
+
+//This will be the same as the previous write to console.
+//We just moved the items from the DogPound to a List
+DogRollCall.WriteToConsole(proofDogRollCallCanBeAList);
+
+//All the methods above could be used with proofDogRollCallCanBeAList
+//Because a List implements IList -> Just like DogPound.cs
+
 Console.ReadLine();
